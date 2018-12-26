@@ -135,8 +135,7 @@ public class TestPresenter {
     }
 
     public void testRetifitDonloadFileInterface(){
-
-        Call <ResponseBody> call = mRetrofitService.downloadADfile("http://news.10jqka.com.cn/allheadline_mlist/1_0_0_1/");
+        Call <ResponseBody> call = mRetrofitService.downloadADfile("www.baidu.com");
         call.enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
@@ -153,7 +152,6 @@ public class TestPresenter {
 
             }
         });
-
     }
 
 
