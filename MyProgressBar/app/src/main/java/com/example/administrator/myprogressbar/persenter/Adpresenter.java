@@ -13,12 +13,11 @@ import io.reactivex.schedulers.Schedulers;
  * com.example.administrator.myprogressbar.persenter
  */
 
-public class Adpresenter<V extends AdContract.View> extends PBase<V> {
+public class AdPresenter<V extends AdContract.View> extends PBase<V> {
 
     private UserModel mUserModel;
 
-    public Adpresenter(){
-
+    public AdPresenter(){
         mUserModel = new UserModel();
 
     }
